@@ -12,11 +12,11 @@ import "./App.css";
 import { Toaster } from "./components/refine-ui/notification/toaster";
 import { useNotificationProvider } from "./components/refine-ui/notification/use-notification-provider";
 import { ThemeProvider } from "./components/refine-ui/theme/theme-provider";
-import { dataProvider } from "./providers/data";
 import { BookOpen, Home } from "lucide-react";
 import { Layout } from "./components/refine-ui/layout/layout";
 import SubjectsList from "./pages/subjects/list";
 import Subjectscreate from "./pages/subjects/create";
+import { dataProvider } from "./provider/data";
 
 function App() {
   return (
@@ -51,7 +51,7 @@ function App() {
                 <Route element={
                   <Layout>
                     <Outlet />
-                  </Layout>
+                  </Layout> 
                 }
                 >
 <Route path="/" element={<Dashboard/>} />
